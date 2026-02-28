@@ -1,0 +1,159 @@
+/* --- STYLES GÉNÉRAUX --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9ecef; /* Fond de page gris clair */
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.cv-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* --- BARRE LATÉRALE (SIDEBAR) --- */
+.sidebar {
+    width: 35%;
+    background-color: #2c3e50; /* Bleu nuit professionnel */
+    color: #ecf0f1;
+    padding: 40px 30px;
+}
+
+.profile-section {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.sidebar h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.job-title {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #3498db; /* Bleu accentuation */
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 20px;
+}
+
+.sidebar h3 {
+    font-size: 1.1rem;
+    margin: 30px 0 15px 0;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: 3px solid #3498db;
+    padding-left: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #3498db;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    background: #34495e;
+    margin-bottom: 8px;
+    padding: 5px 12px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+/* --- CONTENU PRINCIPAL --- */
+.main-content {
+    width: 65%;
+    padding: 50px;
+    background-color: white;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Items de Formation et Expérience */
+.edu-item, .exp-item {
+    margin-bottom: 25px;
+}
+
+h4 {
+    color: #2980b9;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+strong {
+    color: #333;
+}
+
+.date {
+    display: block;
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.main-content p {
+    font-size: 0.95rem;
+    color: #555;
+    text-align: justify;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+    .sidebar {
+        padding: 30px;
+    }
+}
